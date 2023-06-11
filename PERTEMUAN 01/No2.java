@@ -11,11 +11,11 @@ public class No2 {
         // integer bilangan desimal dimisalkan dengan nol 
         try {
         // disini kita menggunakan try dan except
-        // try catch disini digunakan 
+        
             System.out.print("Masukkan jumlah bilangan yang akan diinput: ");
             int n = inp.nextInt();
             inp.nextLine();
-            System.out.println("Silakan masukkan " + n + " bilangan:");
+            System.out.print("Silakan masukkan " + n + " bilangan:");
 
             for (int i = 0; i < n; i++) {
                 double num = inp.nextDouble();
@@ -27,6 +27,13 @@ public class No2 {
                     bildesimal++;
                 }
             }
+            /* variabel i akan dijalankan sebanyak n kali. pada setiap iterasinya,
+             * program akan meminta input bilangan dari pengguna dan menyimpannya sebagai "num", 
+             * kemudian program akan mengecek apakah "num" merupakan bilangan bulat atau desimal melalui operator
+             * modulus. jika hasil dari num % 1 tidak sama dengan 0, makan num adalah bilangan desimal dan variable
+             * bildesimal akan bertambah 1. akhirnya, setelah perulangan selesai, program akan menghasilkan jumlah bilangan
+             * bulat dan desimal yang diinput oleh pengguna. 
+             */
 
             System.out.println(bilbulat + " Bilangan Bulat");
             System.out.println(bildesimal + " Bilangan Desimal");

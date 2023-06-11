@@ -10,9 +10,11 @@ public class No1 {
         System.out.print("NIM : ");
         String inputNIM = inp.nextLine();
         int inputNIMint = Integer.parseInt(inputNIM.substring(inputNIM.length() - 3));
-        //Substring : mengambil nilai dari suatu string
-        //length : panjang dri string
-        // parseInt : awlanya string
+        /*kode ini mengubah 3 karakter terakhir dari string inputNIM menjadi integer, dan menyimpan nilainya
+         * dalam variabel inputNIMint. fungsi substring () digunakan untuk mendapatkan substring dari inputNIM yg
+         * dimulai dari indeks inputNIM.length() - 3 sampai indeks terakhir inputNIM, kemudian fungsi Integer.parseInt()
+         * digunakan untuk mengubah hasil substring menjadi integer. 
+         */
         int number = inputNIMint % 7;
         // 
         System.out.println(number == 0 ? "Soal: no 7" : "Soal : no " + number);

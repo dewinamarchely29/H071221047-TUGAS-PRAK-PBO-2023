@@ -49,7 +49,7 @@ public class Product {
         System.out.println("ID Produk: " + getIdProduk());
         System.out.println("Nama Produk: " + getNamaProduk());
         System.out.println("Stok Produk: " + getStokProduk());
-        System.out.println(" Harga Produk :" + getHargaProduk());
+        System.out.println("Harga Produk :" + getHargaProduk());
         if (stokProduk <= 0) {
             System.out.println("Produk tidak tersedia");
         } else {
@@ -59,11 +59,15 @@ public class Product {
     }
     public static void main(String[] args) {
         Product produk1 = new Product(1, "Tas Ransel", 10, 100000);
-        produk1.cekData();
-        System.out.println(produk1.namaProduk);
-        System.out.println(produk1.stokProduk);
+        System.out.println("Data Produk 1 : ");
+        System.out.println("Nama Produk : " + produk1. getNamaProduk());
+        System.out.println("Stok Produk : " + produk1. getStokProduk());
+
+     
         Product produk2 = new Product(2, "Baju", 10, 50000);
+        System.out.println("Data produk 2: ");
         produk2.cekData();
+        System.out.println("Harga Produk : " + produk2.getHargaProduk());
     }
 }
 

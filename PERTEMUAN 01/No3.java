@@ -16,9 +16,13 @@ public class No3 {
             String hobby = inp.nextLine();
             
             System.out.println("Nama saya " + name + ", " + age + " tahun, hobby " + hobby + ".");
+            
         } catch (Exception e) {
             System.out.println("Umur harus berupa angka!");
+            inp.close();
         }
-        inp.close();
+       
+        
     }
+  
 }
